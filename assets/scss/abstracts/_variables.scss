@@ -1,0 +1,121 @@
+// --------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// --------------------------------------------------------
+
+// Breakpoints
+//
+// 540x, 840px, 992px, 1200px, 1440px
+$breakpoint-up: (
+  "sm": "33.75em",
+  "md": "52.5em",
+  "lg": "62em",
+  "xl": "75em",
+  "xxl": "90em",
+);
+
+// 539.84px, 839.84px, 991.84px, 1199.84px, 1439.84px
+$breakpoint-down: (
+  "sm": "33.74em",
+  "md": "52.49em",
+  "lg": "61.99em",
+  "xl": "74.99em",
+  "xxl": "89.99em",
+);
+
+///
+/// Colors
+///
+/// colors map, contains all colors of the site
+/// @access public
+/// @type Map
+/// @prop {String} key - color name
+/// @prop {Map} shade - shade map
+/// @prop {Number} value - shade value mapped to the key
+$colors: (
+  "primary": (
+    100: hsl(14, 88%, 65%),
+  ),
+  "neutral": (
+    100: hsl(0, 0%, 100%),
+    200: hsl(240, 5%, 71%),
+    300: hsl(240, 6%, 50%),
+    400: hsl(237, 12%, 33%),
+    500: hsl(238, 29%, 16%),
+  ),
+  "accent": (
+    1: hsl(273, 75%, 66%),
+    2: hsl(240, 73%, 65%),
+  ),
+);
+
+// Gradient
+$gradient-accent: linear-gradient(var(--clr-accent-1), var(--clr-accent-2));
+
+//
+// Font
+//
+// Font Family
+$ff-primary: "Kumbh Sans", sans-serif;
+
+$ff-body: var(--ff-primary);
+$ff-heading: var(--ff-primary);
+$ff-lead: var(--ff-primary);
+
+/// Font Sizes
+/// font-sizes map, contains all font sizes of text
+/// size based on heading levels `h1-h6`
+/// @access public
+/// @type Map
+/// @prop {String} key - size name
+/// @prop {Number} value - size value mapped to the key
+$font-sizes: (
+  100: 0.25rem,
+  200: 0.5rem,
+  300: 0.75rem,
+  400: 1rem,
+  500: 1.25rem,
+  600: 1.5rem,
+  700: 1.75rem,
+  800: 2rem,
+);
+
+$fs-body: var(--fs-300);
+$fs-heading: var(--fs-600);
+$fs-lead: var(--fs-400);
+$fs-button: var(--fs-300);
+
+/// Font Weight
+/// font-weights map, contains all font weight of text
+/// @access public
+/// @type Map
+/// @prop {String} key - weight name
+/// @prop {Number} value - weight value mapped to the key
+$font-weights: (
+  "regular": 400,
+  "bold": 700,
+);
+
+///
+/// Spacing
+///
+/// spacers map, contains all spacer value of the site
+/// @access public
+/// @type Map
+/// @prop {String} key - spacer number
+/// @prop {Number} value - spacer value mapped to the key
+$spacer: 1rem;
+$spacers: (
+  100: 0.25rem,
+  200: 0.5rem,
+  300: 0.75rem,
+  400: 1rem,
+  500: 1.5rem,
+  600: 2rem,
+  700: 3rem,
+  800: 4rem,
+  900: 5rem,
+);
+
+$gap: 1rem;
+$transition: 300ms linear;
+$shadow: 0 1.2rem 2.5rem hsla(0, 0%, 0%, 0.3);

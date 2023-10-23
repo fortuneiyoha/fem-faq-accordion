@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the container of the site.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/" as *;
+
+.container {
+  position: relative;
+}
+
+.faq {
+  background: url(../images/bg-pattern-mobile.svg) no-repeat center top;
+  background-color: var(--clr-neutral-100);
+  border-radius: var(--spacer-500);
+  box-shadow: var(--shadow);
+  color: var(--clr-neutral-400);
+  padding: var(--spacer-500);
+  padding-block-end: var(--spacer-700);
+
+  @include breakpoint-up(md) {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: 700% 65%;
+    overflow: hidden;
+    padding: var(--spacer-900);
+  }
+
+  h1 {
+    color: var(--clr-neutral-500);
+    font-size: var(--fs-800);
+    margin-block-end: var(--spacer-400);
+
+    @include breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+}
+
+.column-img {
+  padding-block: var(--spacer-500);
+  position: relative;
+
+  img {
+    --_width: var(--width, 85%);
+    position: absolute;
+    top: -280%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--_width);
+
+    @include breakpoint-up(md) {
+      --width: 145%;
+      left: -45%;
+      max-width: var(--_width);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.illustration-box {
+  display: none;
+  position: absolute;
+
+  @include breakpoint-up(md) {
+    display: block;
+    left: -10%;
+    top: 42%;
+    z-index: 2;
+  }
+}

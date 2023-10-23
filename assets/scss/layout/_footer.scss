@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+@use "../abstracts/" as *;
+
+.attribution {
+  line-height: 1.8;
+  text-align: center;
+
+  a {
+    font-weight: var(--fw-bold);
+
+    &:focus-visible {
+      outline-color: var(--clr-neutral-100);
+    }
+  }
+}

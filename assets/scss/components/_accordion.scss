@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------
+// This file contains all styles related to the accordion component.
+// -----------------------------------------------------------------
+
+@use "../abstracts/" as *;
+
+.accordion {
+  border-block-end: 0.0625rem solid var(--clr-neutral-200);
+
+  &-toggle {
+    @include flex(space-between, center);
+
+    background: transparent;
+    border: 0.0625rem solid transparent;
+    color: var(--clr-neutral-400);
+    cursor: pointer;
+    font-weight: var(--fw-regular);
+    gap: 3rem;
+    padding-block: var(--spacer-400);
+    text-align: left;
+    transition-duration: 200ms;
+    width: 100%;
+
+    &[aria-expanded="true"] {
+      color: var(--clr-neutral-500);
+      font-weight: var(--fw-bold);
+    }
+
+    &:not([aria-expanded="true"], :focus-visible):hover {
+      color: var(--clr-primary-100);
+    }
+
+    &[aria-expanded="true"] &-icon {
+      transform: rotate(180deg);
+    }
+
+    &-icon {
+      transition: var(--transition);
+    }
+  }
+
+  &-body {
+    color: var(--clr-neutral-300);
+    padding-block-end: var(--spacer-400);
+  }
+
+  &-collapse:not(.active) {
+    height: 0;
+    overflow: hidden;
+  }
+}

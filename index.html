@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <meta name="author" content="Fortune Iyoha">
+  <meta name="title" content="Frontend Mentor | FAQ Accordion Card">
+  <meta name="description" content="This is a solution to the FAQ accordion card challenge on Frontend Mentor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="assets/images/illustration-box-desktop.svg" alt="" class="illustration-box">
+
+    <main class="faq">
+      <div class="grid">
+        <div class="column column-img">
+          <picture>
+            <source media="(min-width: 52.5em)" srcset="assets/images/illustration-woman-online-desktop.svg">
+            <img src="assets/images/illustration-woman-online-mobile.svg" alt="">
+          </picture>
+        </div>
+
+        <div class="column column-content">
+          <h1>FAQ <span class="visually-hidden">Frequently Asked Questions</span></h1>
+
+          <div class="accordion">
+            <h4 class="accordion-header">
+              <button type="button" class="accordion-toggle js-accordion-toggle" aria-expanded="false">
+                How many team members can I invite&quest;
+                <span class="accordion-toggle-icon">
+                  <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd">
+                  </svg>
+                </span>
+              </button>
+            </h4>
+            <div class="accordion-collapse js-accordion-collapse">
+              <div class="accordion-body">
+                You can invite up to 2 additional users on the Free plan&period; There is no limit on
+                team members for the Premium plan&period; </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <h4 class="accordion-header">
+              <button type="button" class="accordion-toggle js-accordion-toggle" aria-expanded="false">
+                What is the maximum file upload size&quest;
+                <span class="accordion-toggle-icon">
+                  <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd">
+                  </svg>
+                </span>
+              </button>
+            </h4>
+            <div class="accordion-collapse js-accordion-collapse">
+              <div class="accordion-body">
+                No more than 2GB&period; All files in your account must fit your allotted storage space&period;
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <h4 class="accordion-header">
+              <button type="button" class="accordion-toggle js-accordion-toggle" aria-expanded="false">
+                How do I reset my password&quest;
+                <span class="accordion-toggle-icon">
+                  <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd">
+                  </svg>
+                </span>
+              </button>
+            </h4>
+            <div class="accordion-collapse js-accordion-collapse">
+              <div class="accordion-body">
+                Click &ldquo;Forgot password&rdquo; from the login page or &ldquo;Change password&rdquo; from your
+                profile page&period; A reset link will be emailed to you&period;
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <h4 class="accordion-header">
+              <button type="button" class="accordion-toggle js-accordion-toggle" aria-expanded="false">
+                Can I cancel my subscription&quest;
+                <span class="accordion-toggle-icon">
+                  <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd">
+                  </svg>
+                </span>
+              </button>
+            </h4>
+            <div class="accordion-collapse js-accordion-collapse">
+              <div class="accordion-body">
+                Yes&excl; Send us a message and we&rsquo;ll process your request no questions asked&period;
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <h4 class="accordion-header">
+              <button type="button" class="accordion-toggle js-accordion-toggle" aria-expanded="false">
+                Do you provide additional support&quest;
+                <span class="accordion-toggle-icon">
+                  <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd">
+                  </svg>
+                </span>
+              </button>
+            </h4>
+            <div class="accordion-collapse js-accordion-collapse">
+              <div class="accordion-body">
+                Chat and email support is available 24&sol;7&period; Phone lines are open during normal business
+                hours&period;
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" rel="noopener noreferrer"
+      target="_blank">Frontend Mentor</a>&period;
+    Coded by <a href="https://github.com/fortuneiyoha/" rel="noopener noreferrer"
+      target="_blank">Fortune Iyoha</a>&period;
+  </footer>
+</body>
+
+</html>
