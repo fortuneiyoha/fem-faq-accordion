@@ -19,7 +19,7 @@ Users should be able to:
 ### Links
 
 - **Solution:** [Frontend Mentor: FAQ accordion](https://www.frontendmentor.io/solutions/faq-accordion-card-add-hash)
-- **Live Site:** [https://link_goes_here](https://change_this_link)
+- **Live Site:** [https://fem-faq-accordion.pages.dev/](https://fem-faq-accordion.pages.dev/)
 
 ## Author
 
