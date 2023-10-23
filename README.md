@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- **Solution:** [Frontend Mentor: FAQ accordion](https://www.frontendmentor.io/solutions/faq-accordion-card-add-hash)
+- **Solution:** [Frontend Mentor: FAQ accordion card](https://www.frontendmentor.io/solutions/faq-accordion-card-XANObkAojW)
 - **Live Site:** [https://fem-faq-accordion.pages.dev/](https://fem-faq-accordion.pages.dev/)
 
 ## Author
